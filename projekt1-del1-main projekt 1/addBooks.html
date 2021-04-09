@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Siden til at tilføje bøger til boglisten</title>
+      <script src="app.js"></script>
+    </head>
+    <body>
+        <h1>Books</h1>
+        <section id="books">
+          <article id="add">
+            <div id="formWrap">
+              <form method="post" action="/addbooks">
+                    <div>
+                        <p>
+                            Title:<br/>
+                            <input type="text" name="title" required/>
+                        </p>
+                        <p>
+                            Edition:<br/>
+                            <input type="text" name="Edition" required/>
+                        </p>
+                        <p>
+                            Author: <br/>
+                            <input type="text" name="firstname" required/ placeholder="Firstname">
+                            <input type="text" name="lastname" required/ placeholder="Lastname">
+                        </p>
+                        <p>
+                            Publisher:<br/>
+                            <input type="text" name="name" required/ placeholder="Name">
+                            <input type="text" name="year" required/ placeholder="Year">
+                            <input type="text" name="place" required/ placeholder="Place">
+                        </p>
+                        <p>
+                            Pages:<br/>
+                            <input type="text" name="pages" required/>
+                        </p>
+                        <p>
+                            ISBN:<br/>
+                            <input type="text" name="isbn" required/>
+                        </p>
+                        <p>
+                            Price:<br/>
+                            <input type="text" name="price" required/>
+                        </p>
+                        <p>
+                            Comment:<br/>
+                            <textarea name="Comment"></textarea>
+                        </p>
+                        <p>
+                            <br/><input type="submit" value="Send"/>
+                        </p>
+
+                    </div>
+                </form>
+                
+                <button id="tilfoj">Tilføj Destination</button>
+
+                <input class="list-input" type="text">
+                
+            </div>
+          </article>
+          <article id="display">
+
+          </article>
+
+        </section>
+
+    </body>
+
+</html>
